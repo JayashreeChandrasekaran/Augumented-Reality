@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Virtual Schematics</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+		.big_img
+	{
+        width: 350px;
+        height: 400px;
+        float: left;
+        /*margin-top: 20px;
+        margin-left: 0px;*/
+	}
+	.kutty_img{
+		height: 80px;
+		width: auto;
+		padding-bottom: 12px;
+		cursor: pointer;
+	}
+</style>
+<body>
+       	<div class="container">
+		<div class="row mt-5">
+			<div class="col-md-2">
+					<ul type="none">
+		                 <li>
+			               <img src="../images/furniture/AR_jewels/3.jpg" class="kutty_img">
+		                 </li>
+		                  <li>
+			               <img src="../images/furniture/AR_jewels/1.jpg" class="kutty_img">
+		                  </li>
+		                  <li>
+		                	<img src="../images/furniture/AR_jewels/2.jpg" class="kutty_img">
+		                  </li>
+	                 </ul>
+	             </div>
+	             <div class="col-md-5">            	
+	            	<img src="../images/furniture/AR_jewels/3.jpg" class="big_img img-fluid">
+			    </div>
+			    <div class="col-md-5">            	
+	            	<h4 class="head_top">14K Yellow Or White Gold 1.2mm Shiny Diamond Cut Bead Chain Necklace for Pendants and Charms with Lobster-Claw Clasp (16" 18" or 20 inch)</h4>
+	            	
+	            	
+	            	<div class="dropdown-divider"></div>
+	            	<p>
+	            	M.R.P:<strike>Rs.50000</strike></p><p>
+	            	Price:Rs.4000</p><p>Tax:2.5%</p>
+	            	<p>Fastest delivery</p><p> Free Delivery</p>
+	            	<div class="dropdown-divider"></div>
+	            	<div class="container">
+	            		<div class="row">
+	            			<h4>Click the options to make it yours.</h4>
+	            		
+	            			<div class="col-md-12">
+	            				
+                                <a href="#" class="btn btn-warning" onclick="addtocart()">Add to Cart</a>
+	            			</div>
+	            		</div>
+	            	</div>	            		            	
+			    </div>			  
+		</div>
+	</div>
+	<div class="dropdown-divider"></div>
+	<div class="container">
+		<div class="row">
+			<iframe id="2b3bfc2c-8f23-430f-9959-fc327ca0bca4" src="https://www.vectary.com/viewer/v1/?model=2b3bfc2c-8f23-430f-9959-fc327ca0bca4&env=studio3&turntable=3" frameborder="0" width="100%" height="480"></iframe>
+		</div>
+		<div class="dropdown-divider"></div>
+	</div>
+	<script type="text/javascript">
+		function addtocart(){
+			alert("Successfuly your item is added to your Cart");
+		}
+	</script>
+	
+	<script src="D:\one drive\OneDrive\Desktop\3D Model\Jquery\PLUGIN\zoomsl.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+        $(".kutty_img").hover(function(){
+           $(".big_img").attr('src',$(this).attr('src'));
+        });
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){		
+		$(".big_img").imagezoomsl({
+			zoomrange:[4,4]
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Virtual Schematics</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+		.big_img
+	{
+        width: 350px;
+        height: 400px;
+        float: left;
+        /*margin-top: 20px;
+        margin-left: 0px;*/
+	}
+	.kutty_img{
+		height: 80px;
+		width: auto;
+		padding-bottom: 12px;
+		cursor: pointer;
+	}
+</style>
+<body>
+       	<div class="container">
+		<div class="row mt-5">
+			<div class="col-md-2">
+					<ul type="none">
+		                 <li>
+			               <img src="../images/furniture/AR_sofa/1.jpg" class="kutty_img">
+		                 </li>
+		                  <li>
+			               <img src="../images/furniture/AR_sofa/2.jpg" class="kutty_img">
+		                  </li>
+		                  <li>
+		                	<img src="../images/furniture/AR_sofa/3.jpg" class="kutty_img">
+		                  </li>
+	                 </ul>
+	             </div>
+	             <div class="col-md-5">            	
+	            	<img src="../images/furniture/AR_sofa/3.jpg" class="big_img img-fluid">
+			    </div>
+			    <div class="col-md-5">            	
+	            	<h4 class="head_top">Amazon Sofa - Solimo Alen Two Seater RHS L Shape Sofa Set ( Grey )</h4>
+	            	
+	            	
+	            	<div class="dropdown-divider"></div>
+	            	<p>
+	            	M.R.P:<strike>Rs.50000</strike></p><p>
+	            	Price:Rs.35000</p><p>Tax:2.5%</p>
+	            	<p>Fastest delivery</p><p> Free Delivery</p>
+	            	<div class="dropdown-divider"></div>
+	            	<div class="container">
+	            		<div class="row">
+	            			<h4>Click the options to make it yours.</h4>
+	            		
+	            			<div class="col-md-12">
+	            				
+                                <a href="#" class="btn btn-warning" onclick="addtocart()">Add to Cart</a>
+	            			</div>
+	            		</div>
+	            	</div>
+	            		            	
+			    </div>
+			  
+		</div>
+	</div>
+	<script type="text/javascript">
+		function addtocart(){
+			alert("Successfuly your item is added to your Cart");
+		}
+	</script>
+	<div class="dropdown-divider"></div>
+	<div class="container">
+		
+		<div class="row">
+			<iframe id="9911abca-6a2a-480a-b8f2-ec5cf650df7b" src="https://www.vectary.com/viewer/v1/?model=9911abca-6a2a-480a-b8f2-ec5cf650df7b&env=studio3&turntable=4.5" frameborder="0" width="100%" height="480"></iframe>
+
+		</div>
+		<div class="dropdown-divider"></div>
+	</div>
+	<script src="D:\Virtual Schematics\zoomsl.JS" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+        $(".kutty_img").hover(function(){
+           $(".big_img").attr('src',$(this).attr('src'));
+        });
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){		
+		$(".big_img").imagezoomsl({
+			zoomrange:[4,4]
+		});
+	});
+</script>
+</body>
+</html>
